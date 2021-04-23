@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval and others</title>
+</head>
+<body>
+    <div class="container">
+        <p>hello there</p>
+    </div>
+    <script>
+        function greet(name) {
+            console.log("Hello, " + name);
+        }
+        /*syntax
+        setTimeout(function_name[without parenthesis], duration[in miliseconds], function arguments, arg1, arg2, arg3...)
+        */
+       /*
+       //e.g.
+        let timeoutId = setTimeout(greet, 5000, "Rahul"); //timeoutId contains a unique id given by setTimeout, that can be used in clearing the timeoutId as shown below
+
+        console.log(timeoutId);
+        clearTimeout(timeoutId);
+        */
+       /*syntax
+       setInterval(function_name[without parenthesis], duration[in miliseconds], function arguments, arg1, arg2, arg3...)
+        */
+       /*
+       //e.g.
+       let intervalId = setInterval(greet, 1000, "Rahul");
+       console.log(intervalId);
+       clearInterval(intervalId);
+       */
+        
+    </script>
+</body>
+</html>
